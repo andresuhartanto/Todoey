@@ -107,10 +107,6 @@ class TodoListViewController: UITableViewController {
             request.predicate = categoryPredicate
         }
         
-//        let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, predicate])
-//
-//        request.predicate = compoundPredicate
-        
         do {
             itemArray = try context.fetch(request)
             print(itemArray)
